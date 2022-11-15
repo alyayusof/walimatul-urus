@@ -49,14 +49,20 @@ module.exports = {
       1.75: "1.75rem",
       2: "2rem",
       3: "3rem",
+      4: "4rem",
     },
     extend: {
       fontFamily: {
-        'cinzel': ['"Cinzel"', 'serif'],
         'alex': ['"Alex Brush"', 'cursive'],
-        'garamond': ['"Cormorant Garamond"', 'serif'],
+        'cinzel': ['"Cinzel"', 'serif'],
+        'cormorant': ['"Cormorant Garamond"', 'serif'],
+        'marcellus': ['"Marcellus"', 'serif'],
+        'nunito': ['"Nunito"', 'sans-serif'],
+        'petit': ['"Petit Formal Script"', 'cursive'],
       },
     },
   },
   plugins: [],
 }
+
+// font-family: 'Marcellus', serif;

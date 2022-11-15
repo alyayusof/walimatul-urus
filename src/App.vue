@@ -1,33 +1,24 @@
 <template>
-
-  <!-- <div class="flex flex-col w-full h-full min-h-screen">
-    <div class="flex-1 w-full h-full flex flex-wrap items-center justify-center bg-black">
-        <div class="space-y-2 text-white text-center">
-            <div class="text-h3 md:text-h1 font-black uppercase">Coming Soon</div>
-            <div>This page is under construction. <br/> Thank you for visiting.</div>
-        </div>
-    </div>
-  </div> -->
  
-  <div class="min-h-screen h-full w-full bg-dark font-garamond">
+  <div class="min-h-screen h-full w-full font-cormorant">
     <div class="w-full md:w-container mx-auto">
 
-      <!-- Main Section -->
+      <!-- Cover Section -->
       <div class="bg-local bg-no-repeat bg-center h-screen w-full bg-cover" :style="{ backgroundImage: `url(${mainBg})` }">
         <div class="flex flex-wrap w-full h-full items-center justify-center">
-          <div class="flex flex-col items-center text-center text-white space-y-1.5">
-            <div class="uppercase">Walimatul Urus</div>
+          <div class="flex flex-col items-center text-center text-white space-y-0.75">
+            <div class="font-cinzel uppercase">Walimatul Urus</div>
             <div class="text-h1 text-gold font-cinzel space-y-0">
               <div>Alya</div>
               <div class="font-alex">&</div>
               <div>Azry</div>
             </div>
-            <div class="space-y-0.25">
-              <div class="uppercase">Jumaat</div>
-              <div class="flex items-center justify-center space-x-1">
-                <div class="border-y-2 border-white">FEB</div>
-                <div class="text-h1 pb-1.75">3</div>
-                <div class="border-y-2 border-white">2023</div>
+            <div class="space-y-0">
+              <div class="uppercase font-cormorant italic tracking-widest">Jumaat</div>
+              <div class="flex items-center justify-center font-nunito">
+                <div class="border-y py-0.25 border-white">FEB</div>
+                <div class="text-h1 pl-0.25 pr-1 pb-0.25 font-petit font-light italic">03</div>
+                <div class="border-y py-0.25 border-white">2023</div>
               </div>
             </div>
             <div class="uppercase">Noor Arfa Craft Complex<br>Kuala Terengganu</div>
@@ -35,7 +26,56 @@
         </div>
       </div>
 
-      <!-- Next section -->
+      <!-- Main section -->
+      <div class="bg-white text-dark w-full p-3 flex flex-col items-center space-y-2 text-center">
+        <div class="capitalize font-nunito font-light">Walimatul urus</div>
+        <div class="text-xl space-y-1 font-marcellus">
+          <div>Yusof bin Musa</div>
+          <div>&</div>
+          <div>Malina binti Mohamad@Jusoh</div>
+        </div>
+        <div class="font-nunito font-light">Dengan segala hormatnya mempersilakan tuan/puan ke majlis perkahwinan anakanda kami</div>
+        <div class="text-xl space-y-1 font-marcellus">
+          <div>Noor Alya Shafiqah Binti Yusof</div>
+          <div>&</div>
+          <div>Mohammad Khairul Azry Bin Ahmad Azhan</div>
+        </div>
+        <div class="font-nunito space-y-0.25">
+          <div class="font-bold">Tarikh</div>
+          <div>Jumaat, 3 Februari 2023</div>
+        </div>
+        <div class="font-nunito space-y-0.25">
+          <div class="font-bold">Masa</div>
+          <div>2:30PM - 4:00PM</div>
+        </div>
+        <div class="font-nunito space-y-0.25">
+          <div class="font-bold">Lokasi</div>
+          <div>Noor Arfa Craft Complex, Kuala Terengganu</div>
+        </div>
+      </div>
+
+      <!-- Doa section -->
+      <div class="bg-local bg-no-repeat bg-center h-full w-full bg-cover p-4 text-center space-y-1" :style="{ backgroundImage: `url(${secondaryBg})` }">
+        <div class="text-gold">Ya Allah, berkatilah satukanlah hati kedua pasangan mempelai ini dengan iman, keyakinan dan tawakal kepadaMu, panjangkan umur mereka, lapangkanlah rezeki mereka, dekatlah mereka menuju kebaikan, jauhkanlah mereka dari keburukan, kurniakanlah mereka zuriat yang soleh dan solehah.</div>
+        <div class="flex items-center justify-center text-white space-x-0.5 font-nunito">
+          <div>Alya</div>
+          <div>
+            <svg height="22px" version="1.1" viewBox="0 0 26 22" width="26px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
+                <g fill="#E7594F" id="Main-Card" transform="translate(-151.000000, -1862.000000)">
+                  <g id="Group-5" transform="translate(151.000000, 1862.000000)">
+                    <path d="M19.0586,0.7393 C16.1776,0.7393 13.7366,2.9893 12.8826,6.1043 C12.0306,2.9893 9.5876,0.7393 6.7056,0.7393 C3.1166,0.7393 0.2046,4.2323 0.2046,8.5413 C0.2046,17.1243 12.8826,22.0003 12.8826,22.0003 C12.8826,22.0003 25.5616,17.1243 25.5616,8.5413 C25.5616,4.2323 22.6496,0.7393 19.0586,0.7393" id="Fill-3"></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div>Azry</div>
+        </div>
+      </div>
+
+      <!-- Next section  -->
+
     </div>
   </div>
 
@@ -43,6 +83,7 @@
 
 <script>
 import mainBg from "../src/assets/img/main-bg.png";
+import secondaryBg from "../src/assets/img/main-bg.png";
 
 // Set the date we're counting down to
 var countDownDate = new Date("Feb 3, 2023 10:00:00").getTime();
@@ -78,6 +119,7 @@ export default {
   data() {
     return {
       mainBg,
+      secondaryBg,
     }
   },
 }
