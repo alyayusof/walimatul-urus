@@ -7,37 +7,37 @@
       <div class="bg-local bg-no-repeat bg-center h-screen w-full bg-cover" :style="{ backgroundImage: `url(${mainBg})` }">
         <div class="flex flex-wrap w-full h-full items-center justify-center">
           <div class="flex flex-col items-center text-center text-white space-y-0.75">
-            <div class="font-cinzel uppercase">Walimatul Urus</div>
-            <div class="text-h1 text-gold font-cinzel space-y-0">
+            <div class="text-sm md:text-base font-cinzel uppercase">Walimatul Urus</div>
+            <div class="text-h2 md:text-h1 text-gold font-cinzel space-y-0">
               <div>Alya</div>
               <div class="font-alex">&</div>
               <div>Azry</div>
             </div>
-            <div class="space-y-0 pb-0.25">
-              <div class="uppercase font-cormorant italic tracking-widest">Jumaat</div>
+            <div class="space-y-0">
+              <div class="uppercase font-cormorant italic tracking-widest text-sm md:text-base ">Jumaat</div>
               <!-- <div class="flex items-center justify-center font-nunito">
                 <div class="border-y py-0.25 border-white">FEB</div>
                 <div class="text-h1 pl-0.25 pr-1 pb-0.25 font-petit font-light italic">03</div>
                 <div class="border-y py-0.25 border-white">2023</div>
               </div> -->
-              <div class="text-gold text-h2 pl-0.25 pr-1 font-petit font-light italic">3<span class="text-white text-opacity-30">•</span>2<span class="text-white text-opacity-30">•</span>23</div>
+              <div class="text-gold text-h3 md:text-h2 pl-0.25 pr-1 font-petit font-light italic">3<span class="text-white text-opacity-30">•</span>2<span class="text-white text-opacity-30">•</span>23</div>
               <!-- <div class="uppercase font-cormorant italic tracking-widest">2:30PM - 4:00PM</div> -->
             </div>
-            <div class="uppercase text-sm">Noor Arfa Craft Complex<br>Kuala Terengganu</div>
+            <div class="uppercase text-xs md:text-sm">Noor Arfa Craft Complex<br>Kuala Terengganu</div>
           </div>
         </div>
       </div>
 
       <!-- Main section -->
-      <div class="bg-white text-dark w-full p-3 flex flex-col items-center space-y-2 text-center">
+      <div class="bg-white text-dark w-full p-3 flex flex-col items-center space-y-2 text-center text-sm md:text-base">
         <div class="capitalize font-nunito font-light">Walimatul urus</div>
-        <div class="text-xl space-y-1 font-marcellus">
-          <div>Yusof bin Musa</div>
+        <div class="text-lg md:text-xl space-y-0.5 md:space-y-1 font-marcellus">
+          <div>Yusof Bin Musa</div>
           <div>&</div>
-          <div>Malina binti Mohamad@Jusoh</div>
+          <div>Malina Binti Mohamad@Jusoh</div>
         </div>
         <div class="font-nunito font-light">Dengan segala hormatnya mempersilakan tuan/puan ke majlis perkahwinan anakanda kami</div>
-        <div class="text-xl space-y-1 font-marcellus">
+        <div class="text-lg md:text-xl space-y-0.5 md:space-y-1 font-marcellus">
           <div>Noor Alya Shafiqah Binti Yusof</div>
           <div>&</div>
           <div>Mohammad Khairul Azry Bin Ahmad Azhan</div>
@@ -61,7 +61,7 @@
       </div>
 
       <!-- Doa section -->
-      <div class="bg-local bg-no-repeat bg-center h-full w-full bg-cover p-4 text-center space-y-1 mb-[77px]" :style="{ backgroundImage: `url(${secondaryBg})` }">
+      <div class="bg-local bg-no-repeat bg-center h-full w-full bg-cover p-4 text-center text-sm md:text-base space-y-1 mb-[58px] md:mb-[77px]" :style="{ backgroundImage: `url(${secondaryBg})` }">
         <div class="text-gold">Ya Allah, berkatilah satukanlah hati kedua pasangan mempelai ini dengan iman, keyakinan dan tawakal kepadaMu, panjangkan umur mereka, lapangkanlah rezeki mereka, dekatlah mereka menuju kebaikan, jauhkanlah mereka dari keburukan, kurniakanlah mereka zuriat yang soleh dan solehah.</div>
         <div class="flex items-center justify-center text-white space-x-0.5 font-nunito">
           <div>Alya</div>
@@ -83,12 +83,12 @@
       <!-- Next section  -->
 
       <!-- Navigation section -->
-      <div class="fixed z-50 bottom-0 w-full md:w-container bg-dark text-white text-sm font-nunito">
+      <div class="fixed z-50 bottom-0 w-full md:w-container bg-dark text-white text-xs md:text-sm font-nunito">
         <!-- Panggilan -->
         <div class="w-full p-3 hidden">menu</div>
 
         <!-- Bottom Menu -->
-        <div class="w-full flex items-center justify-around py-1">
+        <div class="w-full flex items-center justify-around py-0.5 md:py-1">
           <div class="flex flex-col items-center space-y-0.25 w-full">
             <div>
               <span class="material-icons text-white">phone</span>
