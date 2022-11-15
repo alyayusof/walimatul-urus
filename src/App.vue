@@ -13,15 +13,17 @@
               <div class="font-alex">&</div>
               <div>Azry</div>
             </div>
-            <div class="space-y-0">
+            <div class="space-y-0 pb-0.25">
               <div class="uppercase font-cormorant italic tracking-widest">Jumaat</div>
-              <div class="flex items-center justify-center font-nunito">
+              <!-- <div class="flex items-center justify-center font-nunito">
                 <div class="border-y py-0.25 border-white">FEB</div>
                 <div class="text-h1 pl-0.25 pr-1 pb-0.25 font-petit font-light italic">03</div>
                 <div class="border-y py-0.25 border-white">2023</div>
-              </div>
+              </div> -->
+              <div class="text-gold text-h2 pl-0.25 pr-1 font-petit font-light italic">3<span class="text-white text-opacity-30">•</span>2<span class="text-white text-opacity-30">•</span>23</div>
+              <!-- <div class="uppercase font-cormorant italic tracking-widest">2:30PM - 4:00PM</div> -->
             </div>
-            <div class="uppercase">Noor Arfa Craft Complex<br>Kuala Terengganu</div>
+            <div class="uppercase text-sm">Noor Arfa Craft Complex<br>Kuala Terengganu</div>
           </div>
         </div>
       </div>
@@ -50,16 +52,20 @@
         </div>
         <div class="font-nunito space-y-0.25">
           <div class="font-bold">Lokasi</div>
-          <div>Noor Arfa Craft Complex, Kuala Terengganu</div>
+          <div>Noor Arfa Craft Complex,<br>Kuala Terengganu</div>
+          <!-- <div class="flex w-full items-center justify-center space-x-1">
+            <a href="">Waze</a>
+            <a href="">GMaps</a>
+          </div> -->
         </div>
       </div>
 
       <!-- Doa section -->
-      <div class="bg-local bg-no-repeat bg-center h-full w-full bg-cover p-4 text-center space-y-1" :style="{ backgroundImage: `url(${secondaryBg})` }">
+      <div class="bg-local bg-no-repeat bg-center h-full w-full bg-cover p-4 text-center space-y-1 mb-[77px]" :style="{ backgroundImage: `url(${secondaryBg})` }">
         <div class="text-gold">Ya Allah, berkatilah satukanlah hati kedua pasangan mempelai ini dengan iman, keyakinan dan tawakal kepadaMu, panjangkan umur mereka, lapangkanlah rezeki mereka, dekatlah mereka menuju kebaikan, jauhkanlah mereka dari keburukan, kurniakanlah mereka zuriat yang soleh dan solehah.</div>
         <div class="flex items-center justify-center text-white space-x-0.5 font-nunito">
           <div>Alya</div>
-          <div>
+          <div class="animate-ping">
             <svg height="22px" version="1.1" viewBox="0 0 26 22" width="26px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
                 <g fill="#E7594F" id="Main-Card" transform="translate(-151.000000, -1862.000000)">
@@ -75,6 +81,28 @@
       </div>
 
       <!-- Next section  -->
+
+      <!-- Navigation section -->
+      <div class="fixed z-50 bottom-0 w-full md:w-container bg-dark text-white text-sm font-nunito">
+        <!-- Panggilan -->
+        <div class="w-full p-3 hidden">menu</div>
+
+        <!-- Bottom Menu -->
+        <div class="w-full flex items-center justify-around py-1">
+          <div class="flex flex-col items-center space-y-0.25 w-full">
+            <div>
+              <span class="material-icons text-white">phone</span>
+            </div>
+            <div>Panggilan</div>
+          </div>
+          <div class="flex flex-col items-center space-y-0.25 w-full">
+            <div>
+              <span class="material-icons text-white">pin_drop</span>
+            </div>
+            <div>Lokasi</div>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>
