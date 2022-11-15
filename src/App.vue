@@ -13,7 +13,7 @@
     <div class="w-full md:w-container mx-auto">
 
       <!-- Main Section -->
-      <div class="bg-local bg-no-repeat bg-center h-screen w-full bg-cover" :style="mainBg">
+      <div class="bg-local bg-no-repeat bg-center h-screen w-full bg-cover" :style="{ backgroundImage: `url(${mainBg})` }">
         <div class="flex flex-wrap w-full h-full items-center justify-center">
           <div class="flex flex-col items-center text-center text-white space-y-1.5">
             <div class="uppercase">Walimatul Urus</div>
@@ -42,7 +42,7 @@
 </template>
 
 <script>
-// import backgroundUrl from "../src/assets/img/background.jpg";
+import mainBg from "../src/assets/img/main-bg.png";
 
 // Set the date we're counting down to
 var countDownDate = new Date("Feb 3, 2023 10:00:00").getTime();
@@ -77,7 +77,7 @@ export default {
   name: 'App',
   data() {
     return {
-      mainBg: { backgroundImage: "url(../src/assets/img/main-bg.png)"}
+      mainBg,
     }
   },
 }
