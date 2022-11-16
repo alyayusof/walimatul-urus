@@ -48,8 +48,7 @@
         </div>
         <div class="font-nunito space-y-0.25">
           <div class="font-bold">Masa</div>
-          <div>11:00AM - 12:30PM</div>
-          <div>2:30PM - 4:00PM</div>
+          <div>11:00AM - 4:00PM</div>
         </div>
         <div class="font-nunito space-y-0.25">
           <div class="font-bold">Lokasi</div>
