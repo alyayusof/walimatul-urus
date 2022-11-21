@@ -1,4 +1,7 @@
 <template>
+
+  <ModalLokasi v-if="showLokasi" @close="showLokasi=false"/>
+  <!-- <ModalPanggilan /> -->
  
   <div class="min-h-screen h-full w-full font-cormorant">
     <div class="w-full md:w-container mx-auto">
@@ -15,12 +18,9 @@
             </div>
             <div class="space-y-0">
               <div class="uppercase font-cormorant italic tracking-widest text-sm md:text-base ">Jumaat</div>
-              <!-- <div class="flex items-center justify-center font-nunito">
-                <div class="border-y py-0.25 border-white">FEB</div>
-                <div class="text-h1 pl-0.25 pr-1 pb-0.25 font-petit font-light italic">03</div>
-                <div class="border-y py-0.25 border-white">2023</div>
-              </div> -->
-              <div class="text-gold text-h3 md:text-h2 pl-0.25 pr-1 font-petit font-light italic">3<span class="text-white text-opacity-30">•</span>2<span class="text-white text-opacity-30">•</span>23</div>
+              <div class="text-gold text-h3 md:text-h2 pl-0.25 pr-1 font-petit font-light italic">
+                3<span class="text-white text-opacity-30">•</span>2<span class="text-white text-opacity-30">•</span>23
+              </div>
               <!-- <div class="uppercase font-cormorant italic tracking-widest">2:30PM - 4:00PM</div> -->
             </div>
             <div class="uppercase text-xs md:text-sm">Noor Arfa Craft Complex<br>Kuala Terengganu</div>
@@ -55,10 +55,18 @@
         <div class="font-nunito space-y-0.25">
           <div class="font-bold">Lokasi</div>
           <div>Noor Arfa Craft Complex,<br>Kuala Terengganu</div>
-          <!-- <div class="flex w-full items-center justify-center space-x-1">
-            <a href="">Waze</a>
-            <a href="">GMaps</a>
-          </div> -->
+          <div class="flex w-full items-center justify-center space-x-1">
+              <div>
+                  <a href="https://waze.com/ul?ll=5.276524430147474, 103.16727607032999&navigate=yes">
+                      <img class="w-icon h-icon rounded-md shadow-md" src="./assets/img/waze.png" alt="">
+                  </a>
+              </div>
+              <div>
+                  <a href="https://www.google.com/maps/?q=5.276492380030661,103.16723315498588">
+                      <img class="w-icon h-icon rounded-md shadow-md" src="./assets/img/google-maps.png" alt="">
+                  </a>
+              </div>
+          </div>
         </div>
       </div>
 
@@ -85,14 +93,35 @@
       <!-- Next section  -->
 
       <!-- Navigation section -->
-      <!-- <BottomMenu /> -->
+      <div class="fixed z-10 bottom-0 w-full flex items-center justify-around py-0.5 md:py-1 md:w-container bg-dark text-white text-xs md:text-sm font-nunito">
+        <!-- <button 
+          type="button"
+          @click="showPanggilan = !showPanggilan"
+          class="flex flex-col items-center space-y-0.25 w-full">
+          <div>
+            <span class="material-icons text-white">phone</span>
+          </div>
+          <div>Panggilan</div>
+        </button> -->
+        <button 
+          type="button"
+          id="showLokasi"
+          @click="showLokasi = true"
+          class="flex flex-col items-center space-y-0.25 w-full">
+          <div>
+            <span class="material-icons text-white">pin_drop</span>
+          </div>
+          <div>Lokasi</div>
+        </button>
+      </div>
+      
     </div>
   </div>
 
 </template>
 
 <script>
-import BottomMenu from "./components/BottomMenu.vue";
+import ModalLokasi from "./components/ModalLokasi.vue";
 
 import mainBg from "./assets/img/main-bg.png";
 import secondaryBg from "./assets/img/main-bg.png";
@@ -128,12 +157,13 @@ var x = setInterval(function() {
 export default {
   name: 'App',
   components:{
-    BottomMenu,
+    ModalLokasi,
   },
   data() {
     return {
       mainBg,
       secondaryBg,
+      showLokasi: false,
     }
   },
 }

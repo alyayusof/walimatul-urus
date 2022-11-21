@@ -28,6 +28,8 @@ module.exports = {
     },
     width: {
       0: 0,
+      "icon": "3rem",
+      "modal": "300px",
       "container": "450px",
       auto: "auto",
       full: "100%",
@@ -35,6 +37,7 @@ module.exports = {
     },
     height: {
       0: 0,
+      "icon": "3rem",
       auto: "auto",
       full: "100%",
       screen: "100vh",
