@@ -32,14 +32,16 @@
       <div class="bg-white text-dark w-full p-3 flex flex-col items-center space-y-2 text-center text-sm md:text-base">
         <div class="capitalize font-nunito font-light">Walimatul urus</div>
         <div class="text-lg md:text-xl space-y-0.5 md:space-y-1 font-marcellus">
-          <div>Yusof Bin Musa</div>
+          <div>En. Yusof Bin Musa</div>
           <div>&</div>
-          <div>Malina Binti Mohamad@Jusoh</div>
+          <div>Pn. Malina Binti Mohamad@Jusoh</div>
         </div>
-        <div class="font-nunito font-light">Dengan segala hormatnya mempersilakan tuan/puan ke majlis perkahwinan anakanda kami</div>
+        <div class="font-nunito font-light ">
+          Dengan penuh hormat dan sukacitanya mempersilakan Dato’ / Datin / Tuan / Puan / Encik / Cik hadir ke majlis perkahwinan puteri kami
+        </div>
         <div class="text-lg md:text-xl space-y-0.5 md:space-y-1 font-marcellus">
           <div>Noor Alya Shafiqah Binti Yusof</div>
-          <div>&</div>
+          <div class="font-nunito font-light text-base md:text-md">dan pasangannya</div>
           <div>Mohammad Khairul Azry Bin Ahmad Azhan</div>
         </div>
         <div class="font-nunito space-y-0.25">
@@ -83,36 +85,17 @@
       <!-- Next section  -->
 
       <!-- Navigation section -->
-      <div class="fixed z-50 bottom-0 w-full md:w-container bg-dark text-white text-xs md:text-sm font-nunito">
-        <!-- Panggilan -->
-        <div class="w-full p-3 hidden">menu</div>
-
-        <!-- Bottom Menu -->
-        <div class="w-full flex items-center justify-around py-0.5 md:py-1">
-          <div class="flex flex-col items-center space-y-0.25 w-full">
-            <div>
-              <span class="material-icons text-white">phone</span>
-            </div>
-            <div>Panggilan</div>
-          </div>
-          <div class="flex flex-col items-center space-y-0.25 w-full">
-            <div>
-              <span class="material-icons text-white">pin_drop</span>
-            </div>
-            <div>Lokasi</div>
-          </div>
-        </div>
-      </div>
-
+      <!-- <BottomMenu /> -->
     </div>
   </div>
 
 </template>
 
 <script>
-import mainBg from "../src/assets/img/main-bg.png";
-import secondaryBg from "../src/assets/img/main-bg.png";
+import BottomMenu from "./components/BottomMenu.vue";
 
+import mainBg from "./assets/img/main-bg.png";
+import secondaryBg from "./assets/img/main-bg.png";
 // Set the date we're counting down to
 var countDownDate = new Date("Feb 3, 2023 10:00:00").getTime();
 
@@ -144,6 +127,9 @@ var x = setInterval(function() {
 
 export default {
   name: 'App',
+  components:{
+    BottomMenu,
+  },
   data() {
     return {
       mainBg,
