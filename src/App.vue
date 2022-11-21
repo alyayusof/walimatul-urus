@@ -1,6 +1,6 @@
 <template>
 
-  <ModalPanggilan v-if="showPanggilan" @close="showPanggilan=false"/>
+  <ModalHubungi v-if="showHubungi" @close="showHubungi=false"/>
   <ModalLokasi v-if="showLokasi" @close="showLokasi=false"/>
  
   <div class="min-h-screen h-full w-full font-cormorant">
@@ -96,12 +96,12 @@
       <div class="fixed z-10 bottom-0 w-full flex items-center justify-around py-0.5 md:py-1 md:w-container bg-dark text-white text-xs md:text-sm font-nunito">
         <button 
           type="button"
-          @click="showPanggilan = true"
+          @click="showHubungi = true"
           class="flex flex-col items-center space-y-0.25 w-full">
           <div>
             <span class="material-icons text-white">phone</span>
           </div>
-          <div>Panggilan</div>
+          <div>Hubungi</div>
         </button>
         <button 
           type="button"
@@ -121,7 +121,7 @@
 </template>
 
 <script>
-import ModalPanggilan from "./components/ModalPanggilan.vue";
+import ModalHubungi from "./components/ModalHubungi.vue";
 import ModalLokasi from "./components/ModalLokasi.vue";
 
 import mainBg from "./assets/img/main-bg.png";
@@ -158,14 +158,14 @@ var x = setInterval(function() {
 export default {
   name: 'App',
   components:{
-    ModalPanggilan,
+    ModalHubungi,
     ModalLokasi,
   },
   data() {
     return {
       mainBg,
       secondaryBg,
-      showPanggilan: false,
+      showHubungi: false,
       showLokasi: false,
     }
   },

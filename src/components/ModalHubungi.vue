@@ -15,7 +15,7 @@
             aria-labelledby="modal-headline"
           >
             <div class="p-1 space-y-0.75">
-                <div class="font-bold">Panggilan</div>
+                <div class="font-bold">Hubungi</div>
                 <div class="w-full space-y-0.5 text-base">
                     
                     <div class="flex w-full items-center justify-between bg-white bg-opacity-10 rounded px-1 py-0.5">
@@ -88,6 +88,6 @@
 
 <script>
 export default {
-  name: 'ModalPanggilan',
+  name: 'ModalHubungi',
 };
 </script>
