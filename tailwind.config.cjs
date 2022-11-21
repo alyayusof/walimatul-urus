@@ -15,6 +15,7 @@ module.exports = {
       white: colors.white,
       dark: '#242424',
       gold: '#EEBB55',
+      red: '#E7594F',
     },
     fontSize: {
       xs: ["0.75rem", "0.75rem"],
@@ -28,7 +29,7 @@ module.exports = {
     },
     width: {
       0: 0,
-      "icon": "3rem",
+      "icon": "3.5rem",
       "modal": "300px",
       "container": "450px",
       auto: "auto",
@@ -37,7 +38,7 @@ module.exports = {
     },
     height: {
       0: 0,
-      "icon": "3rem",
+      "icon": "3.5rem",
       auto: "auto",
       full: "100%",
       screen: "100vh",

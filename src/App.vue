@@ -55,7 +55,7 @@
         <div class="font-nunito space-y-0.25">
           <div class="font-bold">Lokasi</div>
           <div>Noor Arfa Craft Complex,<br>Kuala Terengganu</div>
-          <div class="flex w-full items-center justify-center space-x-1">
+          <div class="flex w-full items-center justify-center space-x-1.5">
               <div>
                   <a href="https://waze.com/ul?ll=5.276524430147474, 103.16727607032999&navigate=yes">
                       <img class="w-icon h-icon rounded-md shadow-md" src="./assets/img/waze.png" alt="">
