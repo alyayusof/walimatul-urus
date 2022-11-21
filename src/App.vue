@@ -1,7 +1,7 @@
 <template>
 
+  <ModalPanggilan v-if="showPanggilan" @close="showPanggilan=false"/>
   <ModalLokasi v-if="showLokasi" @close="showLokasi=false"/>
-  <!-- <ModalPanggilan /> -->
  
   <div class="min-h-screen h-full w-full font-cormorant">
     <div class="w-full md:w-container mx-auto">
@@ -58,12 +58,12 @@
           <div class="flex w-full items-center justify-center space-x-1.5">
               <div>
                   <a href="https://waze.com/ul?ll=5.276524430147474, 103.16727607032999&navigate=yes">
-                      <img class="w-icon h-icon rounded-md shadow-md" src="./assets/img/waze.png" alt="">
+                      <img class="w-icon h-icon rounded-xl shadow-md" src="./assets/img/waze.png" alt="">
                   </a>
               </div>
               <div>
                   <a href="https://www.google.com/maps/?q=5.276492380030661,103.16723315498588">
-                      <img class="w-icon h-icon rounded-md shadow-md" src="./assets/img/google-maps.png" alt="">
+                      <img class="w-icon h-icon rounded-xl shadow-md" src="./assets/img/google-maps.png" alt="">
                   </a>
               </div>
           </div>
@@ -94,15 +94,15 @@
 
       <!-- Navigation section -->
       <div class="fixed z-10 bottom-0 w-full flex items-center justify-around py-0.5 md:py-1 md:w-container bg-dark text-white text-xs md:text-sm font-nunito">
-        <!-- <button 
+        <button 
           type="button"
-          @click="showPanggilan = !showPanggilan"
+          @click="showPanggilan = true"
           class="flex flex-col items-center space-y-0.25 w-full">
           <div>
             <span class="material-icons text-white">phone</span>
           </div>
           <div>Panggilan</div>
-        </button> -->
+        </button>
         <button 
           type="button"
           id="showLokasi"
@@ -121,6 +121,7 @@
 </template>
 
 <script>
+import ModalPanggilan from "./components/ModalPanggilan.vue";
 import ModalLokasi from "./components/ModalLokasi.vue";
 
 import mainBg from "./assets/img/main-bg.png";
@@ -157,12 +158,14 @@ var x = setInterval(function() {
 export default {
   name: 'App',
   components:{
+    ModalPanggilan,
     ModalLokasi,
   },
   data() {
     return {
       mainBg,
       secondaryBg,
+      showPanggilan: false,
       showLokasi: false,
     }
   },

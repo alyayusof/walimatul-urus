@@ -27,12 +27,12 @@
                 <div class="flex w-full items-center justify-center space-x-1.5">
                     <div>
                         <a href="https://waze.com/ul?ll=5.276524430147474, 103.16727607032999&navigate=yes">
-                            <img class="w-icon h-icon rounded-md" src="../assets/img/waze.png" alt="">
+                            <img class="w-icon h-icon rounded-xl" src="../assets/img/waze.png" alt="">
                         </a>
                     </div>
                     <div>
                         <a href="https://www.google.com/maps/?q=5.276492380030661,103.16723315498588">
-                            <img class="w-icon h-icon rounded-md" src="../assets/img/google-maps.png" alt="">
+                            <img class="w-icon h-icon rounded-xl" src="../assets/img/google-maps.png" alt="">
                         </a>
                     </div>
                 </div>

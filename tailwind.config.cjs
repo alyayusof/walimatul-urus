@@ -29,6 +29,7 @@ module.exports = {
     },
     width: {
       0: 0,
+      "call": "3rem",      
       "icon": "3.5rem",
       "modal": "300px",
       "container": "450px",
@@ -38,6 +39,7 @@ module.exports = {
     },
     height: {
       0: 0,
+      "call": "3rem",      
       "icon": "3.5rem",
       auto: "auto",
       full: "100%",
