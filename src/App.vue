@@ -30,6 +30,7 @@
 
       <!-- Main section -->
       <div class="bg-white text-dark w-full p-3 flex flex-col items-center space-y-2 text-center text-sm md:text-base">
+        <div class="text-lg">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
         <div class="capitalize font-nunito font-light">Walimatul urus</div>
         <div class="text-lg md:text-xl space-y-0.5 md:space-y-1 font-marcellus">
           <div>En. Yusof Bin Musa</div>
@@ -37,7 +38,7 @@
           <div>Pn. Malina Binti Mohamad@Jusoh</div>
         </div>
         <div class="font-nunito font-light ">
-          Dengan penuh hormat dan sukacitanya mempersilakan Dato’ / Datin / Tuan / Puan / Encik / Cik hadir ke majlis perkahwinan puteri kami
+          Dengan penuh hormat dan sukacitanya menjemput Dato’ / Datin / Tuan / Puan / Encik / Cik hadir ke majlis perkahwinan puteri kami
         </div>
         <div class="text-lg md:text-xl space-y-0.5 md:space-y-1 font-marcellus">
           <div>Noor Alya Shafiqah Binti Yusof</div>
