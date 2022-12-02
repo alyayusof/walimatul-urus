@@ -5,7 +5,8 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
   // if got CNAME or deploying to https://<USERNAME>.github.io/
-  // base: '/',
+  base: '/',
   // if deploying to https://<USERNAME>.github.io/<REPO>/
-  base: '/walimatul-urus/',
+  // base: '/<REPO>/',
+  // base: '/walimatul-urus/',
 })

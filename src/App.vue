@@ -58,7 +58,7 @@
           <div>Noor Arfa Craft Complex,<br>Kuala Terengganu</div>
           <div class="flex w-full items-center justify-center space-x-1.5">
               <div>
-                  <a href="https://waze.com/ul?ll=5.276524430147474, 103.16727607032999&navigate=yes">
+                  <a href="https://waze.com/ul?ll=5.276524430147474,103.16727607032999&navigate=yes">
                       <img class="w-icon h-icon rounded-xl shadow-md" src="./assets/img/waze.png" alt="">
                   </a>
               </div>
@@ -128,7 +128,7 @@ import ModalLokasi from "./components/ModalLokasi.vue";
 import mainBg from "./assets/img/main-bg.png";
 import secondaryBg from "./assets/img/main-bg.png";
 // Set the date we're counting down to
-var countDownDate = new Date("Feb 3, 2023 10:00:00").getTime();
+var countDownDate = new Date("Feb 3, 2023 11:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
