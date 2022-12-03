@@ -42,7 +42,7 @@
         </div>
         <div class="text-lg md:text-xl space-y-0.5 md:space-y-1 font-marcellus">
           <div>Noor Alya Shafiqah Binti Yusof</div>
-          <div class="font-nunito font-light text-base md:text-md">dan pasangannya</div>
+          <div class="font-nunito font-light text-base md:text-md">dengan pasangannya</div>
           <div>Mohammad Khairul Azry Bin Ahmad Azhan</div>
         </div>
         <div class="font-nunito space-y-0.25">
@@ -72,7 +72,7 @@
       </div>
 
       <!-- Doa section -->
-      <div class="bg-local bg-no-repeat bg-center h-full w-full bg-cover p-4 text-center text-sm md:text-base space-y-1 mb-[58px] md:mb-[77px]" :style="{ backgroundImage: `url(${secondaryBg})` }">
+      <div class="bg-local bg-no-repeat bg-center h-full w-full bg-cover p-4 text-center text-sm md:text-base space-y-1 " :style="{ backgroundImage: `url(${secondaryBg})` }">
         <div class="text-gold">Ya Allah, berkatilah satukanlah hati kedua pasangan mempelai ini dengan iman, keyakinan dan tawakal kepadaMu, panjangkan umur mereka, lapangkanlah rezeki mereka, dekatlah mereka menuju kebaikan, jauhkanlah mereka dari keburukan, kurniakanlah mereka zuriat yang soleh dan solehah.</div>
         <div class="flex items-center justify-center text-white space-x-0.5 font-nunito">
           <div>Alya</div>
@@ -92,6 +92,10 @@
       </div>
 
       <!-- Next section  -->
+      <div class="bg-white text-dark w-full p-3 flex flex-col items-center space-y-1 font-nunito text-center mb-[58px] md:mb-[77px]">
+        <div class="text-sm md:text-base font-bold">Menghitung detik</div>
+        <div class="text-gold-dark text-h3 md:text-h2" id="demo"></div>
+      </div>
 
       <!-- Navigation section -->
       <div class="fixed z-10 bottom-0 w-full flex items-center justify-around py-0.5 md:py-1 md:w-container bg-dark text-white text-xs md:text-sm font-nunito">
@@ -152,7 +156,7 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo").innerHTML = "Done!!!";
   }
 }, 1000);
 

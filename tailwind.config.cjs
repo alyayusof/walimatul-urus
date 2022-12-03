@@ -15,6 +15,10 @@ module.exports = {
       white: colors.white,
       dark: '#242424',
       gold: '#EEBB55',
+      gold: {
+        DEFAULT: '#EEBB55',
+        dark: '#775e2b',
+      },
       red: '#E7594F',
     },
     fontSize: {
